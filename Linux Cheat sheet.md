@@ -3,7 +3,7 @@
 **File Commands:**
 <p> directory listing
 
-<code>        ls
+<code>        ls    <code>   
 <p> formatted listing with hidden files
      
 *        ls -al – 
