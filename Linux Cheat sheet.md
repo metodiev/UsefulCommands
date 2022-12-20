@@ -1,7 +1,7 @@
 ***Linux Cheat Sheet***
 
 **File Commands:**
-- ls – directory listing
+    ls – directory listing
 - ls -al – formatted listing with hidden files
 - cd dir - change directory to dir
 - cd – change to home
@@ -22,7 +22,7 @@
 - tail file – output the last 10 lines of file
 - tail -f file – output the contents of file as it grows, starting with the last 10 lines
 
-**Find files:--
+**Find files:**
 * find "$(pwd)" -name "<filename>" - find file and show full directory name
 * find . -name "<filename>" -type f | xargs du -sh - 
 * find . -type f ! -name "*.*"
