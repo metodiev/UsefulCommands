@@ -2,15 +2,17 @@
 
 **File Commands:**
 
-```sh
-docker run -d -p 8000:8080 --restart=always --cap-add=SYS_ADMIN --name=dillinger <youruser>/dillinger:${package.json.version}
-```
+
 <p> directory listing
 
-<code>        ls    <code>   
+```sh
+ls
+```      
 <p> formatted listing with hidden files
-     
-*        ls -al – 
+```sh
+ls -al
+```   
+
 *        cd dir - change directory to dir
 *        cd – change to home
 - pwd – show current directory
