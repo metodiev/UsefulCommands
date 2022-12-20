@@ -7,7 +7,8 @@
 
 ```sh
 ls
-```      
+```  
+  
 <p> formatted listing with hidden files and permissions
 ```sh
 ls -la
