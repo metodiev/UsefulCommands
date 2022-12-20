@@ -3,8 +3,8 @@
 **File Commands:**
 <p> directory listing
 
--        ls
-* formatted listing with hidden files
+<p>        ls
+<p> formatted listing with hidden files
      
 *        ls -al – 
 *        cd dir - change directory to dir
