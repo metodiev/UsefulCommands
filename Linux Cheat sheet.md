@@ -1,7 +1,6 @@
-#Linux Cheat Sheet
+***Linux Cheat Sheet***
 
 **File Commands:**
-
 - ls – directory listing
 - ls -al – formatted listing with hidden files
 - cd dir - change directory to dir
@@ -23,48 +22,46 @@
 - tail file – output the last 10 lines of file
 - tail -f file – output the contents of file as it grows, starting with the last 10 lines
 
-Find files:
-find "$(pwd)" -name "<filename>" - find file and show full directory name
-find . -name "<filename>" -type f | xargs du -sh - 
-find . -type f ! -name "*.*"
-find . -name "*.<file-type>" -type f -delete
-find . -name "*.<file-type>" -exec rm {} \;
-find . -name "<directory-name>" -type d -exec rm -rv {} +
+**Find files:--
+* find "$(pwd)" -name "<filename>" - find file and show full directory name
+* find . -name "<filename>" -type f | xargs du -sh - 
+* find . -type f ! -name "*.*"
+* find . -name "*.<file-type>" -type f -delete
+* find . -name "*.<file-type>" -exec rm {} \;
+* find . -name "<directory-name>" -type d -exec rm -rv {} +
+
+**LINUX User Profile Configuration**
+*     /bin/bash
+*           The bash executable
+*    /etc/profile
+*           The systemwide initialization file, executed for login shells
+*    /etc/bash.bashrc
+*           The systemwide per-interactive-shell startup file
+*    /etc/bash.bash.logout
+*           The systemwide login shell cleanup file, executed when a login shell exits
+*    ~/.bash_profile
+*           The personal initialization file, executed for login shells
+*    ~/.bashrc
+*           The individual per-interactive-shell startup file
+*    ~/.bash_logout
+*           The individual login shell cleanup file, executed when a login shell exits
+*    ~/.inputrc
+*           Individual readline initialization file
+* 
+
+**Process Management:**
+* ps – display your currently active processes
+* top – display all running processes
+* kill pid – kill process id pid
+* killall proc – kill all processes named proc *
+* bg – lists stopped or background jobs; resume a stopped job in the background
+* fg – brings the most recent job to foreground
+* fg n – brings job n to the foreground
 
 
-LINUX User Profile Configuration
-       /bin/bash
-              The bash executable
-       /etc/profile
-              The systemwide initialization file, executed for login shells
-       /etc/bash.bashrc
-              The systemwide per-interactive-shell startup file
-       /etc/bash.bash.logout
-              The systemwide login shell cleanup file, executed when a login shell exits
-       ~/.bash_profile
-              The personal initialization file, executed for login shells
-       ~/.bashrc
-              The individual per-interactive-shell startup file
-       ~/.bash_logout
-              The individual login shell cleanup file, executed when a login shell exits
-       ~/.inputrc
-              Individual readline initialization file
-
-
-
-##Process Management:
-
-ps – display your currently active processes
-top – display all running processes
-kill pid – kill process id pid
-killall proc – kill all processes named proc *
-bg – lists stopped or background jobs; resume a stopped job in the background
-fg – brings the most recent job to foreground
-fg n – brings job n to the foreground
-
-Shutdown/Restart check:
-last reboot      # check boot log
-last -x shutdown # check shutdown log
+**Shutdown/Restart check:**
+* last reboot      # check boot log
+* last -x shutdown # check shutdown log
 
 List all users:
 less /etc/passwd
