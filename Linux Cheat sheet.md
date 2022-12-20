@@ -12,8 +12,9 @@ ls
 ```sh
 ls -al
 ```   
-*        cd dir - change directory to dir
-*        cd – change to home
+  <p>
+*  cd dir - change directory to dir
+*   cd – change to home
 - pwd – show current directory
 - mkdir dir – create a directory dir
 - rm file – delete file
