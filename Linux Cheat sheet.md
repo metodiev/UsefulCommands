@@ -2,8 +2,10 @@
 
 **File Commands:**
 directory listing
--        ls – 
-       formatted listing with hidden files
+
+-        ls
+formatted listing with hidden files
+     
 *        ls -al – 
 *        cd dir - change directory to dir
 *        cd – change to home
