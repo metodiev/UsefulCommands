@@ -84,7 +84,7 @@ output the contents of file as it grows, starting with the last 10 lines:
 tail -f file
 ```
 
-**Find files:**
+### Find files:
 * find "$(pwd)" -name "<filename>" - find file and show full directory name
 * find . -name "<filename>" -type f | xargs du -sh - 
 * find . -type f ! -name "*.*"
@@ -92,7 +92,7 @@ tail -f file
 * find . -name "*.<file-type>" -exec rm {} \;
 * find . -name "<directory-name>" -type d -exec rm -rv {} +
 
-**LINUX User Profile Configuration**
+### LINUX User Profile Configuration
 *     /bin/bash
 *           The bash executable
 *    /etc/profile
@@ -110,8 +110,7 @@ tail -f file
 *    ~/.inputrc
 *           Individual readline initialization file
 * 
-
-**Process Management:**
+### Process Management:
 * ps – display your currently active processes
 * top – display all running processes
 * kill pid – kill process id pid
@@ -121,24 +120,24 @@ tail -f file
 * fg n – brings job n to the foreground
 
 
-**Shutdown/Restart check:**
+### Shutdown/Restart check:
 * last reboot      # check boot log
 * last -x shutdown # check shutdown log
 
-List all users:
+### List all users:
 less /etc/passwd
 
-Logical Processors counter:
+### Logical Processors counter:
 echo $(nproc) # 4
 
-Copy file from remote host:
+### Copy file from remote host:
 scp <username>@<ip-address>:/some/remote/directory/<original-name>.zip <new-name>.zip 
 
-Check status of the file:
+### Check status of the file:
 
 stat <filename>
 
-Backup Linux system:
+### Backup Linux system:
 cd /
 tar -cvpzf backup.tar.gz \
 --exclude=/backup.tar.gz \
@@ -157,27 +156,29 @@ tar -cvpzf backup.tar.gz \
 --exclude=/home/*/.local/share/Trash /
 
 
-##File Permissions:
+### File Permissions:
 chmod octal file – change the permissions of file to octal, which can be found separately for user, group, and world by adding:
 4 – read (r)
 2 – write (w)
 1 – execute (x)
 
-###Examples:
+### Examples:
 chmod 777 – read, write, execute for all
 chmod 755 – rwx for owner, rx for group and world
-##SSH:
+
+### SSH:
 
 ssh user@host – connect to host as user
 ssh -p port user@host – connect to host on port port as user
 ssh-copy-id user@host – add your key to host for user to enable a keyed or passwordless login
-##Searching:
 
+### Searching:
 grep pattern files – search for pattern in files
 grep -r pattern dir – search recursively for pattern in dir
 command | grep pattern – search for pattern in the output of command
 locate file – find all instances of file
-##System Info:
+
+### System Info:
 
 date – show the current date and time
 cal – show this month's calendar
@@ -195,7 +196,7 @@ free – show memory and swap usage
 whereis app – show possible locations of app
 which app – show which app will be run by default
 
-##Compression:
+### Compression:
 tar cf file.tar files – create a tar named file.tar containing files
 tar xf file.tar – extract the files from file.tar
 tar czf file.tar.gz files – create a tar with Gzip compression
@@ -205,7 +206,7 @@ tar xjf file.tar.bz2 – extract a tar using Bzip2
 gzip file – compresses file and renames it to file.gz
 gzip -d file.gz – decompresses file.gz back to file
 
-##Network:
+### Network:
 ping host – ping host and output results
 whois domain – get whois information for domain
 dig domain – get DNS information for domain
@@ -213,16 +214,16 @@ dig -x host – reverse lookup host
 wget file – download file
 wget -c file – continue a stopped download
 
-##Installation:
+### Installation:
 dpkg -i pkg.deb – install a package (Debian)
 rpm -Uvh pkg.rpm – install a package (RPM)
 
-##Install from source:
+### Install from source:
 ./configure
 make
 make install
 
-##Shortcuts:
+### Shortcuts:
 Ctrl+C – halts the current command
 Ctrl+Z – stops the current command, resume with
 fg in the foreground or bg in the background
