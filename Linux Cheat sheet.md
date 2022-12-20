@@ -1,7 +1,7 @@
 ***Linux Cheat Sheet***
 
 **File Commands:**
-* directory listing
+<p> directory listing
 
 -        ls
 * formatted listing with hidden files
