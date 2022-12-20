@@ -3,23 +3,24 @@
 **File Commands:**
 
 
-<p> directory listing
-
+directory listing:
 ```sh
 ls
 ```  
   
- formatted listing with hidden files and permissions
+formatted listing with hidden files and permissions:
 ```sh
 ls -la
 ```    
-change directory to dir
+change directory to dir:
 ```sh
  cd dir
 ```  
-
-*  cd dir - change directory to dir
-*   cd – change to home
+cd – change to home:
+```sh
+ cd -
+``` 
+*   
 - pwd – show current directory
 - mkdir dir – create a directory dir
 - rm file – delete file
