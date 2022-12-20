@@ -1,10 +1,10 @@
 ***Linux Cheat Sheet***
 
 **File Commands:**
-directory listing
+** directory listing
 
 -        ls
-formatted listing with hidden files
+** formatted listing with hidden files
      
 *        ls -al – 
 *        cd dir - change directory to dir
