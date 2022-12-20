@@ -1,10 +1,10 @@
 ***Linux Cheat Sheet***
 
 **File Commands:**
-        ls – directory listing
-        ls -al – formatted listing with hidden files
-        cd dir - change directory to dir
-        cd – change to home
+*        ls – directory listing
+*        ls -al – formatted listing with hidden files
+*        cd dir - change directory to dir
+*        cd – change to home
 - pwd – show current directory
 - mkdir dir – create a directory dir
 - rm file – delete file
