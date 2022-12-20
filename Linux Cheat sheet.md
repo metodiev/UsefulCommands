@@ -20,12 +20,26 @@ cd – change to home:
 ```sh
  cd -
 ``` 
-*   
-- pwd – show current directory
-- mkdir dir – create a directory dir
-- rm file – delete file
-- rm -r dir – delete directory dir
-- rm -f file – force remove file
+show current directory:
+```sh
+pwd
+``` 
+dir – create a directory dir:
+```sh
+mkdir
+``` 
+delete file:
+```sh
+rm file
+``` 
+ delete directory dir
+```sh
+rm -r dir
+```
+force remove file:
+```sh
+rm -f file
+```
 - rm -rf dir – force remove directory dir *
 - cp file1 file2 – copy file1 to file2
 - cp -r dir1 dir2 – copy dir1 to dir2; create dir2 if it doesn't exist
