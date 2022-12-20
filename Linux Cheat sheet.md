@@ -9,11 +9,11 @@
 ls
 ```  
   
-<p> formatted listing with hidden files and permissions
+ formatted listing with hidden files and permissions
 ```sh
 ls -la
 ```    
-  <p> change directory to dir
+change directory to dir
 ```sh
  cd dir
 ```  
