@@ -12,7 +12,6 @@ ls
 ```sh
 ls -al
 ```   
-
 *        cd dir - change directory to dir
 *        cd – change to home
 - pwd – show current directory
