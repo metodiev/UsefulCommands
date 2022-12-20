@@ -7,7 +7,6 @@ directory listing:
 ```sh
 ls
 ```  
-  
 formatted listing with hidden files and permissions:
 ```sh
 ls -la
@@ -40,17 +39,50 @@ force remove file:
 ```sh
 rm -f file
 ```
-- rm -rf dir – force remove directory dir *
-- cp file1 file2 – copy file1 to file2
-- cp -r dir1 dir2 – copy dir1 to dir2; create dir2 if it doesn't exist
-- mv file1 file2 – rename or move file1 to file2 if file2 is an existing directory, moves file1 into directory file2
-- ln -s file link – create symbolic link link to file
-- touch file – create or update file
-- cat > file – places standard input into file
-- more file – output the contents of file
-- head file – output the first 10 lines of file
-- tail file – output the last 10 lines of file
-- tail -f file – output the contents of file as it grows, starting with the last 10 lines
+```sh
+force remove directory dir:
+ rm -rf dir 
+```
+copy file1 to file2:
+```sh
+cp file1 file2
+```
+copy dir1 to dir2; create dir2 if it doesn't exist:
+```sh
+cp -r dir1 dir2
+```
+rename or move file1 to file2 if file2 is an existing directory, moves file1 into directory file2:
+```sh
+mv file1 file2
+```
+create symbolic link link to file:
+```sh
+ln -s file link
+```
+create or update file:
+```sh
+touch file
+```
+places standard input into file:
+```sh
+cat > file
+```
+output the contents of file:
+```sh
+more file
+```
+output the first 10 lines of file:
+```sh
+head file
+```
+```sh
+output the last 10 lines of file:
+tail file
+```
+output the contents of file as it grows, starting with the last 10 lines:
+```sh
+tail -f file
+```
 
 **Find files:**
 * find "$(pwd)" -name "<filename>" - find file and show full directory name
