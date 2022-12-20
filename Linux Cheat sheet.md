@@ -1,6 +1,6 @@
 ## Linux Cheat Sheet
 
-**File Commands:**
+####File Commands:
 
 
 directory listing:
