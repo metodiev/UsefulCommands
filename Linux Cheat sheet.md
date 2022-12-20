@@ -8,11 +8,15 @@
 ```sh
 ls
 ```      
-<p> formatted listing with hidden files
+<p> formatted listing with hidden files and permissions
 ```sh
 ls -al
 ```   
   <p>
+```sh
+ cd dir
+```  
+
 *  cd dir - change directory to dir
 *   cd – change to home
 - pwd – show current directory
