@@ -1,7 +1,7 @@
 ***Linux Cheat Sheet***
 
 **File Commands:**
-*        ls – directory listing
+-        ls – directory listing
 *        ls -al – formatted listing with hidden files
 *        cd dir - change directory to dir
 *        cd – change to home
