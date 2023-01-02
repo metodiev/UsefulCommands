@@ -22,19 +22,19 @@ cd – change to home:
  cd -
 ``` 
 show current directory:
-```sh
+```bash
 pwd
 ``` 
 dir – create a directory dir:
-```sh
+```bash
 mkdir
 ``` 
 delete file:
-```sh
+```bash
 rm file
 ``` 
  delete directory dir
-```sh
+```bash
 rm -r dir
 ```
 force remove file:
@@ -46,55 +46,58 @@ force remove directory dir:
  rm -rf dir 
 ```
 copy file1 to file2:
-```sh
+```bash
 cp file1 file2
 ```
 copy dir1 to dir2; create dir2 if it doesn't exist:
-```sh
+```bash
 cp -r dir1 dir2
 ```
 rename or move file1 to file2 if file2 is an existing directory, moves file1 into directory file2:
-```sh
+```bash
 mv file1 file2
 ```
 create symbolic link link to file:
-```sh
+```bash
 ln -s file link
 ```
 create or update file:
-```sh
+```bach
 touch file
 ```
 places standard input into file:
-```sh
+```bash
 cat > file
 ```
 output the contents of file:
-```sh
+```bash
 more file
 ```
 output the first 10 lines of file:
-```sh
+```bash
 head file
 ```
-```sh
+```bash
 output the last 10 lines of file:
 tail file
 ```
 output the contents of file as it grows, starting with the last 10 lines:
-```sh
+```bash
 tail -f file
 ```
 
 ### Find files:
+```bash
 * find "$(pwd)" -name "<filename>" - find file and show full directory name
 * find . -name "<filename>" -type f | xargs du -sh - 
 * find . -type f ! -name "*.*"
 * find . -name "*.<file-type>" -type f -delete
 * find . -name "*.<file-type>" -exec rm {} \;
 * find . -name "<directory-name>" -type d -exec rm -rv {} +
+```
 
 ### LINUX User Profile Configuration
+```bash
 *     /bin/bash
 *           The bash executable
 *    /etc/profile
@@ -112,7 +115,9 @@ tail -f file
 *    ~/.inputrc
 *           Individual readline initialization file
 * 
+```
 ### Process Management:
+```bash
 * ps – display your currently active processes
 * top – display all running processes
 * kill pid – kill process id pid
@@ -120,26 +125,36 @@ tail -f file
 * bg – lists stopped or background jobs; resume a stopped job in the background
 * fg – brings the most recent job to foreground
 * fg n – brings job n to the foreground
+```
 
 
 ### Shutdown/Restart check:
+``bash
 * last reboot      # check boot log
 * last -x shutdown # check shutdown log
+```
 
 ### List all users:
+```bash
 less /etc/passwd
+```
 
 ### Logical Processors counter:
+```bash
 echo $(nproc) # 4
+```
 
 ### Copy file from remote host:
+```bash
 scp <username>@<ip-address>:/some/remote/directory/<original-name>.zip <new-name>.zip 
+```
 
 ### Check status of the file:
-
+```bash
 stat <filename>
-
+```
 ### Backup Linux system:
+```bash
 cd /
 tar -cvpzf backup.tar.gz \
 --exclude=/backup.tar.gz \
@@ -156,32 +171,39 @@ tar -cvpzf backup.tar.gz \
 --exclude=/home/*/.gvfs \
 --exclude=/home/*/.cache \
 --exclude=/home/*/.local/share/Trash /
-
+```
 
 ### File Permissions:
+```bash
 chmod octal file – change the permissions of file to octal, which can be found separately for user, group, and world by adding:
 4 – read (r)
 2 – write (w)
 1 – execute (x)
+```
 
 ### Examples:
+```bash
 chmod 777 – read, write, execute for all
 chmod 755 – rwx for owner, rx for group and world
+```
 
 ### SSH:
-
+```bash
 ssh user@host – connect to host as user
 ssh -p port user@host – connect to host on port port as user
 ssh-copy-id user@host – add your key to host for user to enable a keyed or passwordless login
+```
 
 ### Searching:
+```bash
 grep pattern files – search for pattern in files
 grep -r pattern dir – search recursively for pattern in dir
 command | grep pattern – search for pattern in the output of command
 locate file – find all instances of file
+```
 
 ### System Info:
-
+```bash
 date – show the current date and time
 cal – show this month's calendar
 uptime – show current uptime
@@ -197,8 +219,10 @@ du – show directory space usage
 free – show memory and swap usage
 whereis app – show possible locations of app
 which app – show which app will be run by default
+```
 
 ### Compression:
+```bash
 tar cf file.tar files – create a tar named file.tar containing files
 tar xf file.tar – extract the files from file.tar
 tar czf file.tar.gz files – create a tar with Gzip compression
@@ -207,25 +231,32 @@ tar cjf file.tar.bz2 – create a tar with Bzip2 compression
 tar xjf file.tar.bz2 – extract a tar using Bzip2
 gzip file – compresses file and renames it to file.gz
 gzip -d file.gz – decompresses file.gz back to file
+```
 
 ### Network:
+```bash
 ping host – ping host and output results
 whois domain – get whois information for domain
 dig domain – get DNS information for domain
 dig -x host – reverse lookup host
 wget file – download file
 wget -c file – continue a stopped download
+```
 
 ### Installation:
+```bash
 dpkg -i pkg.deb – install a package (Debian)
 rpm -Uvh pkg.rpm – install a package (RPM)
+```
 
 ### Install from source:
+```bash
 ./configure
 make
 make install
-
+```
 ### Shortcuts:
+```bash
 Ctrl+C – halts the current command
 Ctrl+Z – stops the current command, resume with
 fg in the foreground or bg in the background
@@ -235,3 +266,4 @@ Ctrl+U – erases the whole line
 Ctrl+R – type to bring up a recent command
 !! - repeats the last command
 exit – log out of current session
+```
